@@ -36,7 +36,7 @@ def get_data_cached(symbol, period="30d", interval="1h"):
         st.error(f"Error fetching {symbol}: {str(e)}")
         return None
 
-ef add_indicators(data):
+def add_indicators(data):
     """Add technical indicators - FIXED VERSION"""
     data = data.copy()
     
