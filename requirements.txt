@@ -1,6 +1,6 @@
-ta==0.8.0 
 streamlit 
 yfinance 
 pandas 
 numpy 
 plotly 
+ta==0.8.0 

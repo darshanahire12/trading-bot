@@ -36,7 +36,12 @@ def get_data_cached(symbol, period="30d", interval="1h"):
         st.error(f"Error fetching {symbol}: {str(e)}")
         return None
 
-def add_indicators(data):
+ef add_indicators(data):
+    """Add technical indicators - FIXED VERSION"""
+    data = data.copy()
+    
+    # RSI Fixed
+    data['RSI'](data):
     """Add technical indicators to dataframe"""
     data = data.copy()
     data['RSI'] = ta.momentum.rsi(data['Close'], length=14)
